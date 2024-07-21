@@ -53,16 +53,28 @@ def generate_table():
             }
             for column_id in ["message_id", "publication_id", "documentum_id", "status"]
         ],
-
-
-        # style_table={'height': '400px'},
-        # style_cell={'textAlign': 'left'},
+        style_header={
+            'backgroundColor': 'blue',
+            'fontWeight': 'bold',
+            'color': 'red',
+            'textAlign': 'center',
+            'font-family':'sans-serif',
+        },
+        style_filter={
+            'backgroundColor': 'blue',
+            'fontWeight': 'bold',
+            'color': 'red',
+            'textAlign': 'center',
+            'font-family':'sans-serif',
+        },
         style_data={
             'width': '150px', 
             'minWidth': '150px', 
             'maxWidth': '150px',
             'overflow': 'hidden',
             'textOverflow': 'ellipsis',
+            'backgroundColor': 'yellow',
+            'font-family':'consolas',
         },
         style_data_conditional=[
             {
@@ -160,7 +172,9 @@ def daily_barplot(selected_statuses, pivot_status) -> go.Figure:
         title='Count of status per day',
         xaxis_title='Date',
         yaxis_title='Count',
-        legend_title='Status'
+        legend_title='Status',
+        plot_bgcolor='rgba(0, 0, 0, 0)',
+        paper_bgcolor='rgba(0, 0, 0, 0)',
     )
     
     return fig
