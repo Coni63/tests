@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dashboard-fricadel"
+version = "0.1.0"
+description = ""
+authors = ["Nicolas M. <mine.nicolas@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dashboard_fricadel"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dash = "^2.17.1"
+plotly = "^5.22.0"
+pandas = "^2.2.2"
+ipykernel = "^6.29.5"
+lorem = "^0.1.1"
+faker = "^26.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
