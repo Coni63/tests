@@ -1,2 +1,3 @@
 test-image/
 venv/
+__pycache__/
