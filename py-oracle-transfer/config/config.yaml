@@ -1,0 +1,7 @@
+stages:
+  stage1:
+    source_conn_str: oracle+oracledb://user:password@localhost:1234/DB1
+    source_query: SELECT * FROM TABLE1
+    target_conn_str: oracle+oracledb://user:password@localhost:1234/DB2
+    target_table: TABLE2
+    mode: replace
