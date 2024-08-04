@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import A, B, C, AtoB
+from .models import A, B, C, AtoB, Status
 
 from adminsortable2.admin import SortableAdminMixin
 from adminsortable2.admin import SortableInlineAdminMixin, SortableAdminBase
@@ -18,4 +18,4 @@ class AAdmin(SortableAdminBase, admin.ModelAdmin):
 
 admin.site.register(A, AAdmin)
 # admin.site.register(B, BAdmin)
-# admin.site.register(C)
+admin.site.register(Status)

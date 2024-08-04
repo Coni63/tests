@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'adminsortable2',
     'orderable',
+    'slick_reporting',
+    "crispy_forms",
+    "crispy_bootstrap4",
     "sample",
 ]
 
@@ -54,6 +57,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "myproject.urls"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 TEMPLATES = [
     {

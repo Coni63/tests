@@ -31,3 +31,14 @@ class AtoB(Orderable):
     class Meta:
         unique_together = ('a', 'b')
         ordering = ['sort_order']
+
+
+class Status(models.Model):
+    message_id = models.CharField(max_length=10, blank=True)
+    documentum_id = models.CharField(max_length=100, blank=True)
+    publication_id = models.CharField(max_length=100, blank=True)
+    status = models.CharField(max_length=20, blank=True)
+    status_message = models.CharField(max_length=100, blank=True)
+    created_at = models.DateTimeField(blank=True)
+    updated_at = models.DateTimeField(blank=True)
+    message = models.JSONField(blank=True)
